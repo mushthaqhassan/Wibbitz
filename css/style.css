@@ -1,0 +1,1935 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+header {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+}
+header div.logo {
+	
+}
+header div.logo h1 {
+	width: 100%;
+}
+header div.logo h1 a {
+	display: inline-block;
+}
+header div.logo h1 a img {
+	display: block;
+	width: 100%;
+}
+header nav.middle {
+	
+}
+header nav.middle ul {
+	display: flex;
+	align-items: center;
+}
+header nav.middle ul li {
+	margin-right: 52px;
+}
+header nav.middle ul li:last-child {
+	margin-right: 0;
+}
+header nav.middle ul li a {
+	font-weight: 500;
+	font-size: 18px;
+	display: inline-block;
+}
+header nav.right {
+
+}
+header nav.right ul {
+	display: flex;
+	align-items: center;
+}
+header nav.right ul li {
+	margin-right: 33px;
+}
+header nav.right ul li:last-child {
+	margin-right: 0;
+}
+header nav.right ul li a {
+	font-weight: 500;
+	font-size: 18px;
+	display: inline-block;
+}
+header nav.right ul li a.butten {
+    padding: 10px 24px;
+	background-color: hsl(18deg 85% 92%);
+	border-radius: 12px;
+	color: hsl(16deg 89% 63%);
+	font-weight: 600;
+	display: inline-block;
+}
+#spotlight {
+
+}
+#spotlight div.countainer {
+	display: flex;
+	justify-content: space-between;
+}
+#spotlight div.countainer div.left {
+	width: 46%;
+	padding-top: 100px;
+	position: relative;
+}
+#spotlight div.countainer div.left h2 {
+	font-size: 57px;
+	font-weight: 700;
+	margin-bottom: 58px;
+}
+#spotlight div.countainer div.left p {
+	font-size: 20px;
+	font-weight: 500;
+	width: 78%;
+	line-height: 1.3em;
+	margin-bottom: 54px;
+}
+#spotlight div.countainer div.left form {
+    display: flex;
+    align-items: center;
+    padding: 19px 15px;
+    border: 1px solid #000;
+    width: 51%;
+    border-radius: 10px;
+}
+#spotlight div.countainer div.left form a.butten {
+	position: absolute;
+    background-color: #2756fb;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+	left: 250px;
+	display: inline-block;
+}
+#spotlight div.countainer div.left form input {
+	font-size: 16px;
+}
+#spotlight div.countainer div.right {
+	width: 54%;
+	position: relative;
+}
+#spotlight div.countainer div.right div.image_countainer {
+	width: 780px;
+	padding-top: 89px;
+}
+#spotlight div.countainer div.right div.image_countainer img {
+	width: 100%;
+	display: block;
+}
+#spotlight div.countainer div.right div.image_play {
+    background-color: #f5794c;
+    padding: 40px 43px;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    left: 340px;
+}
+#spotlight div.countainer div.right div.image_play img {
+	width: 100%;
+	display: block;
+	filter: invert(1);
+}
+#spotlight div.countainer div.right div.image_dotted {
+	width: 70px;
+    position: absolute;
+    top: 82px;
+    left: 263px;
+}
+#spotlight div.countainer div.right div.image_dotted img {
+	width: 100%;
+	display: block;
+}
+#spotlight span {
+	display: block;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 78px;
+    margin-bottom: 55px;
+    font-size: 18px;
+}
+#spotlight section.spotlight_bottem {
+	margin-bottom: 55px;
+}
+#spotlight section.spotlight_bottem ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#spotlight section.spotlight_bottem ul li {
+
+}
+#spotlight section.spotlight_bottem ul li a {
+	display: inline-block;
+}
+#spotlight section.spotlight_bottem ul li a img {
+	width: 100%;
+	display: block;
+}
+#service {
+
+}
+#service section.wrapper {
+
+}
+#service div.item {
+	display: flex;
+	padding: 100px 0;
+}
+#service div.item.middle {
+	background: #f8f8f8;
+}
+#service div.item.middle section.wrapper {
+	display: flex;
+}
+#service div.item.middle div.left {
+	width: 62%;
+}
+#service div.item.middle div.left div.image_countainer {
+	width: 515px;
+}
+#service div.item.middle div.right div.fill.yellow {
+	background-color: #f9c837;
+}
+#service div.item div.left {
+	width: 86%;
+}
+#service div.item div.left div.image_countainer {
+	width: 574px;
+}
+#service div.item div.left div.image_countainer img {
+	width: 100%;
+	display: block;
+}
+#service div.item div.right {
+	width: 45%;
+}
+#service div.item div.right div.fill {
+    background-color: #f5794c;
+    display: inline-block;
+    padding: 16px 16px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+#service div.item div.right div.fill.green {
+	background-color: #46d278;
+}
+#service div.item div.right div.fill img {
+	width: 100%;
+	display: block;
+}
+#service div.item div.right h3 {
+	font-size: 44px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+#service div.item div.right p {
+	font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+#service div.item div.right a.butten {
+	padding: 14px 14px;
+	font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2756fb;
+    border-radius: 10px;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+#service div.item div.right hr.line {
+	width: 50%;
+	border: .5px dashed #cdcdcd;
+	margin-bottom: 35px;
+}
+#service div.item div.right span {
+	display: inline-block;
+    color: #777777;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+#service div.item div.right small {
+	display: inline-block;
+    color: #777777;
+	margin-bottom: 25px;
+}
+#service div.item div.right small b {
+	font-weight: 600;
+}
+#service div.item div.right div.logo {
+	width: 20%;
+}
+#service div.item div.right div.logo_heart {
+	width: 30%;
+}
+#service div.item div.right div.usa_today {
+	width: 15%;
+}
+#service div.item div.right div.logo img {
+	width: 100%;
+	display: block;
+}
+#features {
+
+}
+#features div.countainer {
+	margin: 140px 0;
+}
+#features div.countainer div.top {
+
+}
+#features div.countainer div.top h3 {
+	font-size: 47px;
+    font-weight: 700;
+    margin-bottom: 70px;
+    width: 45%;
+}
+#features div.countainer div.top ul {
+	display: flex;
+	justify-content: space-between;
+}
+#features div.countainer div.top ul li.review {
+	width: 33%;
+	margin-right: 25px;
+	position: relative;
+}
+#features div.countainer div.top ul li.review:last-child {
+	margin-right: 0;
+}
+#features div.countainer div.top ul li.review div.image_countainer {
+
+}
+#features div.countainer div.top ul li.review div.image_countainer img {
+	display: block;
+	width: 100%;
+	border-radius: 10px;
+}
+#features div.countainer div.top ul li.review p {
+	font-size: 21px;
+    font-weight: 600;
+    margin-top: 22px;
+    line-height: 1.3em;
+}
+#features div.countainer div.top ul li.review div.play {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 19px 21px;
+    top: 24px;
+    left: 309px;
+}
+#features div.countainer div.top ul li.review div.play img {
+	width: 100%;
+	display: block;
+}
+#features div.countainer div.top ul li.review div.nbc {
+	position: absolute;
+    background: #fff;
+    padding: 8px 34px;
+    border-radius: 10px;
+    top: 266px;
+    left: 12px;
+    width: 26%;
+}
+#features div.countainer div.top ul li.review div.nbc img {
+	display: block;
+	width: 100%;
+}
+#features div.countainer div.top ul li.review div.hubspot {
+	position: absolute;
+    background: #fff;
+    padding: 12px 23px;
+    border-radius: 10px;
+    top: 263px;
+    left: 13px;
+    width: 30%;
+}
+#features div.countainer div.top ul li.review div.hubspot img {
+	display: block;
+	width: 100%;
+}
+#features div.countainer div.top ul li.review div.housing {
+	position: absolute;
+    padding: 15px 17px;
+    background: #fff;
+    top: 261px;
+    left: 12px;
+    border-radius: 10px;
+    width: 32%;
+}
+#features div.countainer div.top ul li.review div.housing img {
+	display: block;
+	width: 100%;
+}
+#features div.countainer div.bottem {
+	margin: 186px 0;
+}
+#features div.countainer div.bottem ul {
+	display: flex;
+}
+#features div.countainer div.bottem ul li {
+	margin-right: 100px;
+	position: relative;
+}
+#features div.countainer div.bottem ul li:last-child {
+	margin-right: 0;
+}
+#features div.countainer div.bottem ul li div.image_countainer {
+	width: 100%;
+	margin-bottom: 30px;
+}
+#features div.countainer div.bottem ul li div.image_countainer img {
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+#features div.countainer div.bottem ul li p {
+	font-size: 22px;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#features div.countainer div.bottem ul li span {
+	display: block;
+    font-weight: 600;
+	margin-bottom: 4px;
+}
+#features div.countainer div.bottem ul li small {
+	color: #8c8c8c;
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+#features div.countainer div.bottem ul li span.last {
+
+}
+#features div.countainer div.bottem ul li div.hogan {
+	position: absolute;
+    top: 373px;
+    left: 17px;
+    background: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 20%;
+}
+#features div.countainer div.bottem ul li div.hogan img {
+	width: 100%;
+	display: block;
+}
+#features div.countainer div.bottem ul li div.bet {
+    position: absolute;
+    top: 373px;
+    left: 14px;
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    width: 20%;
+}
+#features div.countainer div.bottem ul li div.bet img {
+	width: 100%;
+	display: block;
+}
+#middle {
+	background-color: #f8f8f8;
+}
+#middle section.wrapper {
+
+}
+#middle div.countainer {
+	padding: 120px 0;
+	text-align: center;
+}
+#middle div.countainer h3 {
+	font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    width: 52%;
+    margin: 0 auto;
+	margin-bottom: 74px;
+}
+#middle div.countainer ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 100px;
+}
+#middle div.countainer ul li {
+	width: 33.3%;
+	padding-top: 50px;
+}
+#middle div.countainer ul li.one {
+	border-right: 1.5px dashed #cdcdcd;
+}
+#middle div.countainer ul li.two {
+	border-right: 1.5px dashed #cdcdcd;
+}
+#middle div.countainer ul li.four {
+	border-right: 1.5px dashed #cdcdcd;
+}
+#middle div.countainer ul li.five {
+	border-right: 1.5px dashed #cdcdcd;
+}
+#middle div.countainer ul li div.image_countainer {
+	width: 60%;
+	margin: 0 auto;
+}
+#middle div.countainer ul li div.image_countainer img {
+	display: block;
+	width: 100%;
+}
+#middle div.countainer ul li h4 {
+	margin-top: 50px;
+    font-size: 26px;
+    font-weight: 700;
+	margin-bottom: 26px;
+}
+#middle div.countainer ul li p {
+	font-size: 16px;
+    width: 53%;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 132px;
+}
+#middle div.countainer div.box {
+	display: flex;
+	background-color: #d0dfff;
+    padding: 42px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+	position: relative;
+}
+#middle div.countainer div.box span {
+	font-weight: 500;
+    width: 69%;
+    display: block;
+    line-height: 1.6em;
+    text-align: left;
+}
+#middle div.countainer div.box a.butten {
+	display: block;
+    background: #2756fb;
+    padding: 16px 13px;
+    border-radius: 10px;
+    width: 25%;
+    color: #fff;
+    font-weight: 600;
+}
+#middle div.countainer div.box div.star {
+	position: absolute;
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 20px;
+    bottom: 114px;
+    left: 70px;
+}
+#middle div.countainer div.box div.star img {
+	display: block;
+	width: 100%;
+}
+#solutions {
+
+}
+#solutions section.wrapper {
+
+}
+#solutions div.container {
+
+}
+#solutions div.container div.top {
+	margin: 100px 0;
+}
+#solutions div.container div.top h3 {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+	margin-bottom: 82px;
+}
+#solutions div.container div.top ul {
+	display: flex;
+}
+#solutions div.container div.top ul li {
+	margin-right: 40px;
+}
+#solutions div.container div.top ul li:last-child {
+	margin-right: 0;
+}
+#solutions div.container div.top ul li.one {
+	background-color: #d0dfff;
+	border-radius: 10px;
+	padding: 48px 0;
+}
+#solutions div.container div.top ul li.one div.studio {
+    background: #fff;
+    width: 19%;
+    padding: 19px 14px;
+    border-radius: 26px;
+    margin: 0 auto
+}
+#solutions div.container div.top ul li.one div.studio img {
+	display: block;
+	width: 100%;
+}
+#solutions div.container div.top ul li.one a.butten {
+    display: block;
+    background: #2756fb;
+    padding: 12px 29px;
+    border-radius: 10px;
+    width: 43%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+	margin-bottom: 68%;
+}
+#solutions div.container div.top ul li.two {
+	background-color: #fef4d7;
+	border-radius: 10px;
+	padding: 48px 0;
+}
+#solutions div.container div.top ul li.two div.light_box {
+    background: #fff;
+    width: 19%;
+    padding: 20px 16px;
+    border-radius: 26px;
+    margin: 0 auto;
+}
+#solutions div.container div.top ul li.two div.light_box img {
+	display: block;
+	width: 100%;
+}
+#solutions div.container div.top ul li.two a.butten {
+    display: block;
+    background: #f9c837;
+    padding: 12px 29px;
+    border-radius: 10px;
+    width: 43%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+	margin-bottom: 68%;
+}
+#solutions div.container div.top ul li.three {
+	background-color: #fce4da;
+	border-radius: 10px;
+	padding: 48px 0;
+}
+#solutions div.container div.top ul li.three div.wavi {
+    background: #fff;
+    width: 19%;
+    padding: 22px 14px;
+    border-radius: 26px;
+    margin: 0 auto;
+}
+#solutions div.container div.top ul li.three div.wavi img {
+	display: block;
+	width: 100%;
+}
+#solutions div.container div.top ul li.three a.butten {
+    display: block;
+    background: #f5794c;
+    padding: 12px 29px;
+    border-radius: 10px;
+    width: 43%;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+	margin-bottom: 68%;
+}
+#solutions div.container div.top ul li h4 {
+	text-align: center;
+    margin-top: 22px;
+    font-size: 24px;
+    font-weight: 700;
+}
+#solutions div.container div.top ul li p {
+	width: 64%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 600;
+	margin-bottom: 24px;
+}
+
+#solutions div.container div.top ul li {
+	position: relative;
+}
+#solutions div.container div.top ul li div.image_container {
+    position: absolute;
+    top: 363px;
+    left: 15px;
+}
+#solutions div.container div.top ul li div.image_container img {
+	display: block;
+	width: 100%;
+}
+#solutions div.container div.bottem {
+	margin: auto;
+    margin-top: 166px;
+    margin-bottom: 80px;
+}
+#solutions div.container div.bottem h3 {
+    width: 51%;
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 82px;
+}
+#solutions div.container div.bottem ul {
+	display: flex;
+	margin-bottom: 60px;
+}
+#solutions div.container div.bottem ul li {
+	margin-right: 42px;
+	width: 33%;
+}
+#solutions div.container div.bottem ul li:last-child {
+	margin-right: 0;
+}
+#solutions div.container div.bottem ul li div.image_container {
+
+}
+#solutions div.container div.bottem ul li div.image_container img {
+	border-radius: 6px;
+	display: block;
+	width: 100%;
+}
+#solutions div.container div.bottem ul li small.blue {
+	display: block;
+    margin-top: 28px;
+	font-weight: 600;
+	color:  #2756fb;
+}
+#solutions div.container div.bottem ul li small {
+	display: block;
+    margin-top: 28px;
+    font-weight: 600;
+}
+#solutions div.container div.bottem ul li p {
+	margin-top: 22px;
+    font-size: 20px;
+    line-height: 1.3em;
+    font-weight: 600;
+}
+#solutions div.container div.bottem ul li a {
+	display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#solutions div.container div.bottem a.butten {
+	background: #2756fb;
+    padding: 17px 28px;
+    border-radius: 7px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    display: block;
+}
+#help {
+	background-color: #000;
+}
+#help section.wrapper {
+
+}
+#help div.container {
+	padding: 66px 0;
+	display: flex;
+	justify-content: space-between;
+}
+#help div.container div.left {
+	width: 45%;
+}
+#help div.container div.left h3 {
+	font-size: 46px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 32px;
+}
+#help div.container div.left p {
+	color: #9b9b9b;
+	margin-bottom: 25px;
+}
+#help div.container div.left hr {
+	border: 0.5px dashed #fff;
+	width: 25%;
+
+}
+#help div.container div.left h4 {
+	margin-top: 22px;
+	font-size: 19px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 28px;
+}
+#help div.container div.left p.italics {
+	font-style: italic;
+	font-size: 18px;
+	color: #fff;
+}
+#help div.container div.left span {
+	display: block;
+    font-size: 15px;
+    font-weight: 700;
+	color: #fff;
+    margin-bottom: 4px;
+}
+#help div.container div.left small {
+	display: block;
+	color: #9b9b9b;
+	margin-bottom: 16px;
+}
+#help div.container div.left div.round-image {
+
+}
+#help div.container div.left div.round-image ul {
+	display: flex;
+	margin-bottom: 60px;
+}
+#help div.container div.left div.round-image ul li {
+	margin-right: 10px;
+	width: 8%;
+}
+#help div.container div.left div.round-image ul li:last-child {
+	margin-right: 0;
+}
+#help div.container div.left div.round-image ul li img {
+	display: block;
+	width: 100%;
+	border-radius: 50%;
+}
+#help div.container div.left div.round-image ul li img:hover {
+	padding: 2px;
+	border: 2px solid rgb(236, 125, 21);
+}
+#help div.container div.left ul.logo {
+	display: flex;
+    margin-top: 32px;
+    align-items: center;
+}
+#help div.container div.left ul.logo li {
+	margin-right: 23px;
+}
+#help div.container div.left ul.logo li:last-child {
+	margin-right: 0;
+}
+#help div.container div.left ul.logo li img {
+	display: block;
+	width: 100%;
+}
+#help div.container div.right {
+	width: 50%;
+    padding: 50px;
+    background: #fff;
+    border-radius: 10px;
+    height: fit-content;
+}
+#help div.container div.right h3 {
+	font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#help div.container div.right ul {
+	display: flex;
+    justify-content: space-between;
+	width: 100%;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+#help div.container div.right ul li.input {
+
+}
+#help div.container div.right ul li.input input {
+	border: 1px solid #c4c4c4;
+    color: #818181;
+    font-size: 17px;
+    padding: 15px 20px;
+    width: 48%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+#help div.container div.right ul li.select {
+
+}
+#help div.container div.right ul li.select select {
+	border: 1px solid #c4c4c4;
+    color: #818181;
+    font-size: 17px;
+    padding: 15px 20px;
+    width: 48%;
+    margin-bottom: 10px;
+}
+#help div.container div.right div.checkbox {
+	display: flex;
+	margin-bottom: 20px;
+}
+#help section.wrapper div.right div.checkbox input[type=checkbox] {
+	width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+#help div.container div.right div.checkbox p {
+	color: #818181;
+    font-size: 15px;
+	font-weight: 600;
+}
+#help div.container div.right div.checkbox p a {
+	text-decoration: underline;
+	color: #818181;
+	font-weight: 600;
+}
+#help div.container div.right a.button {
+	display: block;
+    background: #2756fb;
+    font-weight: 600;
+    padding: 20px 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+}
+footer {
+
+}
+footer section.wrapper {
+
+}
+footer div.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+    margin: 80px 0;
+}
+footer div.container div.left {
+	width: 50%;
+}
+footer div.container div.left h6 {
+	font-size: 26px;
+	margin-bottom: 42px;
+}
+footer div.container div.left ul.icon {
+	display: flex;
+	align-items: center;
+	margin-bottom: 26px;
+}
+footer div.container div.left ul li {
+	filter: grayscale(100%);
+    opacity: 0.5;
+    padding: 10px 12px;
+    background: #c4c4c4;
+    border-radius: 14px;
+    margin: 0px 20px 20px 0px;
+}
+footer div.container div.left ul li img {
+	display: block;
+	width: 100%;
+}
+footer div.container div.left div.language {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 28%;
+}
+footer div.container div.left div.language div.globe {
+	width: 12%;
+}
+footer div.container div.left div.language div.globe img {
+	display: block;
+	width: 100%;
+}
+footer div.container div.left div.language span {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+}
+footer div.container div.left div.small {
+	display: flex;
+	justify-content: space-between;
+	width: 21%;
+	margin-top: 16px;
+}
+footer div.container div.left div.small small {
+	font-size: 17px;
+}
+footer div.container div.right {
+	width: 50%;
+}
+footer div.container div.right ul {
+	display: flex;
+}
+footer div.container div.right ul li {
+	margin-right: 30px;
+}
+footer div.container div.right ul li:last-child {
+	margin-right: 0;
+}
+footer div.container div.right ul li h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+footer div.container div.right ul li div.end {
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer div.container div.right ul li div.end div.logo {
+	margin-bottom: 10px;
+    width: 25%;
+}
+footer div.container div.right ul li div.end div.logo img {
+	display: block;
+	width: 100%;
+}
+footer div.container div.right ul li div.end span {
+	font-weight: 500;
+}
+footer div.container div.right ul li span {
+	display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+@media all and (max-width:1280px) {
+	header div.logo {
+		width: 22%;
+	}
+	header nav.middle {
+		width: 60%;
+	}
+	header nav.right ul li a.butten {
+		padding: 10px 16px;
+		border-radius: 9px;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		left: 228px;
+	}
+	header nav.middle ul li {
+		margin-right: 30px;
+	}
+	header nav.middle ul li a {
+		font-size: 16px;
+	}
+	header nav.right ul li a {
+		font-size: 16px;
+	}
+	header nav.right ul li {
+		margin-right: 10px;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 48px;
+	}
+	#spotlight div.countainer div.right div.image_countainer {
+		width: 670px;
+	}
+	#spotlight div.countainer div.right div.image_dotted {
+		top: 70px;
+		left: 230px;
+	}
+	#spotlight div.countainer div.right div.image_play {
+		top: 18px;
+		left: 300px;
+	}
+	#features div.countainer div.top ul li.review div.play {
+		left: 270px;
+	}
+	#features div.countainer div.top ul li.review div.nbc {
+		top: 230px;
+		padding: 8px 31px;
+	}
+	#features div.countainer div.top ul li.review div.hubspot {
+		top: 228px;
+	}
+	#features div.countainer div.top ul li.review div.housing {
+		top: 225px;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		top: 340px;
+		padding: 7px 26px;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		padding: 12px 22px;
+		top: 340px;
+	}
+	#middle div.countainer div.box a.butten {
+		width: 27%;
+	}
+	#solutions div.container div.top ul li.one a.butten {
+		width: 46%;
+	}
+	#solutions div.container div.top ul li.two a.butten {
+		width: 46%;
+	}
+	#solutions div.container div.top ul li.three a.butten {
+		width: 46%;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 21%;
+	}
+	footer div.container div.left div.language {
+		width: 31%;
+	}
+}
+@media all and (max-width:1080px) {
+	header {
+		padding: 0 5%;
+	}
+	header nav.middle ul li a {
+		font-size: 14px;
+	}
+	header div.logo {
+		width: auto;
+	}
+	header nav.middle {
+		width: 57%;
+	}
+	header nav.middle ul li {
+		margin-right: 33px;
+	}
+	header nav.right {
+		width: auto;
+	}
+	header nav.right ul li a {
+		font-size: 15px;
+	}
+	header nav.right ul li a.butten {
+		padding: 10px 13px;
+	}
+	#spotlight div.countainer div.left {
+		width: 50%;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 40px;
+	}
+	#spotlight div.countainer div.left p {
+		font-size: 18px;
+	}
+	#spotlight div.countainer div.left form {
+		width: 62%;
+		padding: 17px 24px;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		padding: 18px 10px;
+		width: 37%;
+		left: 171px;
+	}
+	#spotlight div.countainer div.left form input {
+		font-size: 14px;
+	}
+	#spotlight div.countainer div.right {
+		width: 70%;
+	}
+	#spotlight div.countainer div.right div.image_countainer {
+		width: 580px;
+	}
+	#spotlight div.countainer div.right div.image_dotted {
+		left: 190px;
+	}
+	#spotlight div.countainer div.right div.image_play {
+		padding: 37px 39px;
+		top: 23px;
+    	left: 260px;
+	}
+	#service div.item.middle div.left {
+		width: 74%;
+	}
+	#service div.item div.right h3 {
+	    font-size: 34px;
+    	margin-bottom: 24px;
+	}
+	#service div.item div.right p {
+		font-size: 17px;
+	}
+	#service div.item div.left div.image_countainer {
+		width: 510px;
+	}
+	#service div.item div.right a.butten {
+		font-size: 14px;
+	}
+	#service div.item div.right hr.line {
+		margin-bottom: 22px;
+	}
+	#service div.item div.right small {
+		margin-bottom: 24px;
+	}
+	#features div.countainer div.top ul li.review div.nbc {
+		top: 184px;
+		width: 30%;
+	}
+	#features div.countainer div.top ul li.review div.hubspot {
+		width: 31%;
+		top: 184px;
+	}
+	#features div.countainer div.top ul li.review div.housing {
+		padding: 15px 9px;
+		top: 175px;
+	}
+	#features div.countainer div.top ul li.review div.play {
+		left: 210px;
+		padding: 15px 17px;
+	}
+	#features div.countainer div.top ul li.review p {
+		font-weight: 500;
+		font-size: 19px;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		top: 272px;
+		padding: 7px 19px;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		top: 269px;
+		padding: 12px 14px;
+	}
+	#features div.countainer div.bottem ul li p {
+		font-size: 20px;
+	}
+	#middle div.countainer div.box {
+		width: 57%;
+	}
+	#middle div.countainer div.box span {
+		width: 74%;
+	}
+	#middle div.countainer div.box a.butten {
+		width: 30%;
+	}
+	#solutions div.container div.top ul li.one a.butten {
+		width: 56%;
+	}
+	#solutions div.container div.top ul li.two a.butten {
+		width: 56%;
+	}
+	#solutions div.container div.top ul li.three a.butten {
+		width: 56%;
+	}
+	#solutions div.container div.top ul li {
+		height: 71vh;
+	}
+	#solutions div.container div.bottem h3 {
+		font-size: 44px;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 25%;
+	}
+	footer div.container div.left div.language span {
+		font-size: 15px;
+	}
+	footer div.container div.left div.small {
+		width: 26%;
+	}
+}
+@media all and (max-width:980px) {
+	header nav.middle {
+		display: none;
+	}
+	header nav.right ul li a {
+		font-size: 18px;
+	}
+	#spotlight div.countainer div.right {
+		width: 54%;
+	}
+	#spotlight div.countainer div.right div.image_countainer {
+		width: 433px;
+	}
+	#spotlight div.countainer div.right div.image_play {
+		padding: 30px 32px;
+	}
+	#spotlight div.countainer div.right div.image_dotted {
+		top: 62px;
+		left: 138px;
+	}
+	#spotlight div.countainer div.right div.image_play {
+		top: 26px;
+		left: 207px;
+	}
+	#spotlight div.countainer div.left {
+		width: 40%;
+		padding-top: 34px;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 29px;
+		margin-bottom: 45px;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		padding: 16px 17px;
+		width: 46%;
+		left: 157px;
+	}
+	#spotlight div.countainer div.left form {
+		padding: 16px 9px;
+	}
+	#spotlight div.countainer div.left form {
+		width: 67%;
+	}
+	#spotlight section.spotlight_bottem ul li {
+		width: 10%;
+	}
+	#service div.item div.left div.image_countainer {
+		width: 380px;
+	}
+	#service div.item.middle div.left div.image_countainer {
+		width: 380px;
+	}
+	#service div.item div.left {
+		width: 72%;
+		padding-top: 100px;
+	}
+	#service div.item div.right div.fill {
+		padding: 12px 12px;
+	}
+	#service div.item div.right h3 {
+		font-size: 27px;
+	}
+	#service div.item.middle div.left {
+		width: 62%;
+	}
+	#features div.countainer div.top h3 {
+		width: 52%;
+	}
+	#features div.countainer div.top ul li.review {
+		margin-right: 15px;
+	}
+	#service div.item.middle div.right {
+		width: 38%;
+	}
+	#features div.countainer div.top ul li.review div.play {
+		left: 160px;
+		padding: 15px 17px;
+	}
+	#features div.countainer div.top ul li.review div.nbc {
+		top: 137px;
+		padding: 8px 26px;
+		width: 33%;
+	}
+	#features div.countainer div.top ul li.review div.hubspot {
+		top: 140px;
+		padding: 12px 20px;
+		width: 33%;
+	}
+	#features div.countainer div.top ul li.review div.housing {
+		top: 135px;
+		width: 33%;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		width: 21%;
+		top: 194px;
+		padding: 7px 11px;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		top: 197px;
+		width: 22%;
+	}
+	#features div.countainer div.bottem ul li p {
+		font-size: 17px;
+	}
+	#middle div.countainer ul li p {
+		width: 76%;
+		margin-bottom: 74px;
+	}
+	#middle div.countainer div.box {
+		width: 70%;
+	}
+	#solutions div.container div.top h3 {
+		font-size: 34px;
+	}
+	#solutions div.container div.top ul li.one div.studio {
+		width: 26%;
+	}
+	#solutions div.container div.top ul li.two div.light_box {
+		width: 26%;
+	}
+	#solutions div.container div.top ul li.three div.wavi {
+		width: 26%;
+	}
+	#solutions div.container div.top ul li.one a.butten {
+		width: 65%;
+		padding: 12px 23px;
+		font-size: 17px;
+	}
+	#solutions div.container div.top ul li.two a.butten {
+		width: 65%;
+		padding: 12px 23px;
+		font-size: 17px;
+	}
+	#solutions div.container div.top ul li.three a.butten {
+		width: 65%;
+		padding: 12px 23px;
+		font-size: 17px;
+	}
+	#solutions div.container div.top ul li div.image_container {
+		top: 434px;
+		left: 3px;
+	}
+	#solutions div.container div.top ul li p {
+		margin-top: 16px;
+		width: 70%;
+	}
+	#solutions div.container div.bottem h3 {
+		font-size: 36px;
+	}
+	#solutions div.container div.bottem ul li p {
+		font-size: 16px;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 32%;
+	}
+	#help div.container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+    	align-items: center;
+		text-align: center;
+	}
+	#help div.container div.left hr {
+		width: 62%;
+		margin: 0 auto;
+	}
+	#help div.container div.left div.round-image ul {
+		justify-content: center;
+	}
+	#help div.container div.left ul.logo {
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	#help div.container div.left {
+		width: 70%;
+	}
+	#help div.container div.right {
+		width: 70%;
+	}
+	footer div.container {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer div.container div.left {
+		text-align: center;
+	}
+	footer div.container div.left h6 {
+		font-size: 30px;
+	}
+	footer div.container div.left ul.icon {
+		justify-content: center;
+	}
+	footer div.container div.left div.language {
+		width: 36%;
+		margin: 0 auto;
+	}
+	footer div.container div.left div.small {
+		width: 29%;
+		margin: 0 auto;
+    	padding: 24px;
+	}
+	footer div.container div.right {
+		width: 66%;
+	}
+}
+@media all and (max-width:768px) {
+	#spotlight div.countainer {
+		flex-direction: column;
+		align-items: center;
+	}
+	#spotlight div.countainer div.left {
+		width: 74%;
+		margin: 0 auto;
+	}
+	#spotlight div.countainer div.right {
+		width: 78%;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 38px;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		width: 30%;
+		left: 260px;
+	}
+	#spotlight section.spotlight_bottem ul li {
+		width: 10%;
+	}
+	#service div.item {
+		flex-direction: column;
+		align-items: center;
+	}
+	#service div.item div.left {
+		width: 70%;
+		margin-bottom: 50px;
+	}
+	#service div.item div.right {
+		width: 60%;
+	}
+	#service div.item.middle section.wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
+	#service div.item.middle div.left {
+		width: 70%;
+		margin-bottom: 50px;
+	}
+	#service div.item.middle div.right {
+		width: 60%;
+	}
+	#features div.countainer div.top h3 {
+		width: 70%;
+	}
+	#features div.countainer div.top ul {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	#features div.countainer div.top ul li.review {
+		width: 38%;
+	}
+	#features div.countainer div.top ul li.review {
+		margin-right: 20px;
+	}
+	#features div.countainer div.top ul li.review p {
+		margin-bottom: 20px;
+	}
+	#features div.countainer div.top ul li.review p {
+		font-size: 17px;
+	}
+	#features div.countainer div.bottem ul li {
+		margin-right: 15px;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		top: 185px;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		top: 188px;
+	}
+	#middle div.countainer h3 {
+		width: 84%;
+	}
+	#middle div.countainer div.box {
+		width: 84%;
+	}
+	#solutions div.container div.top ul li {
+		margin-right: 10px;
+	}
+	#solutions div.container div.top ul li p {
+		width: 74%;
+		font-size: 14px;
+	}
+	#solutions div.container div.top ul li.one a.butten {
+		width: 72%;
+	}
+	#solutions div.container div.top ul li.two a.butten {
+		width: 72%;
+	}
+	#solutions div.container div.top ul li.three a.butten {
+		width: 72%;
+	}
+	#solutions div.container div.bottem h3 {
+		width: 67%;
+	}
+	#solutions div.container div.bottem ul li {
+		margin-right: 10px;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 38%;
+	}
+	#solutions div.container div.top ul li div.image_container {
+		top: 470px;
+	}
+	#help div.container div.right {
+		width: 84%;
+	}
+	#help div.container div.right div.checkbox p {
+		font-size: 14px;
+	}
+	footer div.container div.left h6 {
+		font-size: 34px;
+	}
+	footer div.container div.left div.language {
+		width: 55%;
+	}
+	footer div.container div.left div.small {
+		width: 50%;
+	}
+	footer div.container div.right {
+		width: 77%;
+	}
+}
+@media all and (max-width:640px) {
+	header nav.right ul li a {
+		font-size: 15px;
+	}
+	#spotlight div.countainer div.left {
+		width: 100%;
+		text-align: center;
+	}
+	#spotlight div.countainer div.right {
+		display: none;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 39px;
+	}
+	#spotlight div.countainer div.left p {
+		width: 100%;
+	}
+	#spotlight div.countainer div.left form {
+		margin: 0 auto;
+	}
+	#spotlight span {
+		font-size: 16px;
+	}
+	#spotlight section.spotlight_bottem ul {
+		flex-wrap: wrap;
+	}
+	#spotlight section.spotlight_bottem ul li {
+		width: 21%;
+	}
+	#service div.item div.left {
+		width: 82%;
+	}
+	#features div.countainer div.top h3 {
+		width: 80%;
+		font-size: 36px;
+	}
+	#features div.countainer div.top ul li.review {
+		width: 90%;
+	}
+	#features div.countainer div.top ul li.review div.nbc {
+		top: 258px;
+		padding: 8px 32px;
+		width: 24%;
+	}
+	#features div.countainer div.top ul li.review div.hubspot {
+		top: 252px;
+		width: 26%;
+	}
+	#features div.countainer div.top ul li.review div.housing {
+		top: 244px;
+		width: 29%;
+	}
+	#features div.countainer div.top ul li.review div.play {
+		left: 306px;
+		padding: 22px 24px;
+	}
+	#features div.countainer div.bottem ul {
+		flex-direction: column;
+		align-items: center;
+	}
+	#features div.countainer div.bottem ul li {
+		width: 85%;
+		margin-bottom: 35px;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		top: 239px;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		top: 240px;
+	}
+	#middle div.countainer h3 {
+		width: 100%;
+		font-size: 36px;
+	}
+	#middle div.countainer ul li {
+		width: 48%;
+	}
+	#middle div.countainer ul li.one {
+		border: none;
+	}
+	#middle div.countainer ul li.two {
+		border: none;
+	}
+	#middle div.countainer ul li.three {
+		border: none;
+	}
+	#middle div.countainer ul li.four {
+		border: none;
+	}
+	#middle div.countainer ul li.five {
+		border: none;
+	}
+	#middle div.countainer ul li p {
+		width: 90%;
+	}
+	#middle div.countainer div.box span {
+		width: 100%;
+		font-size: 15px;
+	}
+	#middle div.countainer div.box {
+		width: 100%;
+	}
+	#middle div.countainer div.box a.butten {
+		width: 23%;
+		font-size: 14px;
+		padding: 12px 23px;
+	}
+	#solutions div.container div.top ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#solutions div.container div.top ul li {
+		width: 47%;
+		margin-right: 12px;
+		margin-bottom: 138px;
+	}
+	#solutions div.container div.top ul li div.image_container {
+		top: 426px;
+	}
+	#solutions div.container div.bottem h3 {
+		width: 100%;
+		font-size: 34px;
+	}
+	#solutions div.container div.bottem ul {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	#solutions div.container div.bottem ul li {
+		width: 47%;
+		margin-bottom: 32px;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 51%;
+	}
+	#help div.container div.left {
+		width: 90%;
+	}
+	#help div.container div.right {
+		width: 96%;
+	}
+	footer div.container div.left {
+		width: 90%;
+	}
+	footer div.container div.right ul li {
+		margin-right: 50px;
+		margin-bottom: 40px;
+	}
+	footer div.container div.left div.small {
+		margin-bottom: 15px;
+	}
+	footer div.container div.right ul {
+		flex-wrap: wrap;
+	}
+}
+@media all and (max-width:480px)  {
+	header nav.right ul li a {
+		font-size: 13px;
+	}
+	#spotlight div.countainer div.left h2 {
+		font-size: 28px;
+	}
+	#spotlight div.countainer div.left p {
+		font-size: 16px;
+	}
+	#spotlight div.countainer div.left form {
+		width: 74%;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		width: 39%;
+		left: 194px;
+	}
+	#service div.item div.left {
+		width: 100%;
+	}
+	#service div.item div.left div.image_countainer {
+		width: 332px;
+	}
+	#service div.item div.right {
+		width: 80%;	
+	}
+	#service div.item.middle div.left {
+		width: 100%;
+	}
+	#service div.item.middle div.left div.image_countainer {
+		width: 338px;
+	}
+	#service div.item.middle div.right {
+		width: 80%;
+	}
+	#features div.countainer div.top ul li.review div.nbc {
+		padding: 8px 23px;
+		width: 22%;
+		top: 204px;
+	}
+	#features div.countainer div.top ul li.review div.hubspot {
+		top: 204px;
+	}
+	#features div.countainer div.top ul li.review {
+		width: 100%;
+	}
+	#features div.countainer div.top ul li.review div.play {
+		left: 209px;
+	}
+	#features div.countainer div.top ul li.review div.housing {
+		top: 212px;
+	}
+	#features div.countainer div.bottem ul li {
+		width: 95%;
+	}
+	#features div.countainer div.bottem ul li div.bet {
+		top: 202px;
+	}
+	#features div.countainer div.bottem ul li div.hogan {
+		top: 202px;
+	}
+	#middle div.countainer ul li p {
+		width: 90%;
+	}
+	#middle div.countainer div.box {
+		flex-direction: column;
+		align-items: center;
+	}
+	#middle div.countainer div.box div.star {
+		bottom: 170px;
+		left: 40px;
+	}
+	#middle div.countainer div.box a.butten {
+		width: 52%;
+	}
+	#solutions div.container div.top h3 {
+		font-size: 27px;
+	}
+	#solutions div.container div.top ul li {
+		width: 100%;
+	}
+	#solutions div.container div.top ul li.one a.butten {
+		width: 45%;
+	}
+	#solutions div.container div.top ul li.two a.butten {
+		width: 45%;
+	}
+	#solutions div.container div.top ul li.three a.butten {
+		width: 45%;
+	}
+	#solutions div.container div.bottem ul li {
+		width: 84%;
+	}
+	#solutions div.container div.bottem a.butten {
+		width: 68%;
+	}
+	#help div.container div.left {
+		width: 100%;
+	}
+	#help div.container div.right {
+		padding: 22px;
+	}
+}
+@media all and (max-width:360px) {
+	header nav.right {
+		display: none;
+	}
+	#spotlight div.countainer div.left form a.butten {
+		width: 43%;
+	}
+	#spotlight section.spotlight_bottem ul li {
+		width: 34%;
+		margin-bottom: 30px;
+	}
+	#service div.item div.right {
+		width: 86%;
+	}
+
+}
